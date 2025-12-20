@@ -1,0 +1,132 @@
+[
+  {
+    "type": "HOUSE",
+    "boundary": "DETACHED",
+    "location": {
+      "number": 2,
+      "street": "Stratton Drive",
+      "town": "Barking",
+      "postcode": "IG119HJ"
+    },
+    "price": {
+      "price": 1370000,
+      "currency": "GBP",
+      "isRent": false,
+      "period": null
+    },
+    "bedrooms": [
+      "Master Ensuite",
+      "Ensuite 2",
+      "Ensuite 3",
+      "Bedroom 4",
+      "Ensuite 5",
+      "Ensuite 6"
+    ],
+    "bathrooms": 7,
+    "tenure": "FREEHOLD",
+    "description": "Spacious SIX BEDROOM Detached House Located on the Desirable Leftley Estate.<br/>This Property is Well Presented and Features THREE RECEPTION ROOMS, a Kitchen-Diner, Ground Floor Bathroom, WC and Lean To.<br/>The First Floor has FOUR DOUBLE BEDROOMS, each with its own En Suite, and a further TWO DOUBLE BEDROOMS with En Suites can be found in the Loft.<br/>The Property Boasts a Driveway for Multiple Cars, as well as a Large Garage.",
+    "images": [
+      "/images/houses/0/0.webp",
+      "/images/houses/0/1.webp",
+      "/images/houses/0/2.webp",
+      "/images/houses/0/3.jpg",
+      "/images/houses/0/4.webp",
+      "/images/houses/0/5.webp",
+      "/images/houses/0/6.webp",
+      "/images/houses/0/7.jpg",
+      "/images/houses/0/8.webp",
+      "/images/houses/0/9.webp",
+      "/images/houses/0/10.webp",
+      "/images/houses/0/11.webp",
+      "/images/houses/0/12.webp",
+      "/images/houses/0/13.webp",
+      "/images/houses/0/14.jpg",
+      "/images/houses/0/15.webp"
+    ]
+  },
+  {
+    "type": "HOUSE",
+    "boundary": "SEMIDETACHED",
+    "location": {
+      "number": 37,
+      "street": "Stratton Drive",
+      "town": "Barking",
+      "postcode": "IG119HJ"
+    },
+    "price": {
+      "price": 675000,
+      "currency": "GBP",
+      "isRent": false,
+      "period": null
+    },
+    "bedrooms": ["Bedroom 1", "Bedroom 2", "Bedroom 3"],
+    "bathrooms": 1,
+    "tenure": "FREEHOLD",
+    "description": "Stratton Drive, IG11 9HH – Exceptional 3-Bedroom semi-detached Family Home on a Corner Plot with Huge Potential<br /><br />Perfectly positioned on the ever-popular Leftley Estate, this impressive three-bedroom home sits proudly on a substantial corner plot, offering a wealth of space inside and out – and the exciting potential for a double-storey side extension (STPP).<br /><br />Upon entering, you are greeted by two spacious reception rooms, ideal for entertaining guests or enjoying quiet evenings with family. The layout is both practical and inviting, allowing for a seamless flow between the living areas.<br /><br />The kitchen area offers plenty of room for everyday cooking and entertaining, while a handy ground floor WC is tucked neatly under the stairs for convenience.<br /><br />On the first floor you have three well-proportioned bedrooms provide ample space for relaxation, ensuring that everyone has their own sanctuary, and a large family bathroom complete with bath, separate shower, WC, and wash basin – perfect for busy mornings.<br /><br />One of the standout features of this home is the parking space available for two vehicles, a rare find in urban settings. This convenience adds to the overall appeal, making daily life just a little easier.<br /><br />The location on Stratton Drive is particularly advantageous, with local amenities, schools, and parks within easy reach. This makes it an excellent choice for families looking to settle in a friendly community.<br /><br />In summary, this semi-detached house offers a fantastic opportunity to own a piece of Barking's history while enjoying the comforts of modern living. With its spacious rooms, convenient parking, and prime location, it is a property not to be missed..",
+    "images": [
+      "/images/houses/1/0.jpeg",
+      "/images/houses/1/1.jpeg",
+      "/images/houses/1/2.jpeg",
+      "/images/houses/1/3.jpeg",
+      "/images/houses/1/4.jpeg",
+      "/images/houses/1/5.jpeg",
+      "/images/houses/1/6.jpeg",
+      "/images/houses/1/7.jpeg",
+      "/images/houses/1/8.jpeg",
+      "/images/houses/1/9.jpeg",
+      "/images/houses/1/10.jpeg",
+      "/images/houses/1/11.jpeg",
+      "/images/houses/1/12.jpeg",
+      "/images/houses/1/13.jpeg",
+      "/images/houses/1/14.jpeg",
+      "/images/houses/1/15.jpeg",
+      "/images/houses/1/16.jpeg",
+      "/images/houses/1/17.jpeg",
+      "/images/houses/1/18.jpeg"
+    ]
+  },
+  {
+    "type": "APARTMENT",
+    "boundary": null,
+    "location": {
+      "number": 48,
+      "street": "W Olympic Way",
+      "town": "Wembley",
+      "postcode": "HA90HS"
+    },
+    "price": {
+      "price": 635,
+      "currency": "GBP",
+      "isRent": true,
+      "period": "WEEKLY"
+    },
+    "bedrooms": ["Bedroom 1", "Bedroom 2", "Bedroom 3"],
+    "bathrooms": 1,
+    "tenure": null,
+    "description": "Up to 4 weeks rent free on select units on a 12-month contract when you move in by 31/12!<br /><br />Alameda has been designed as a haven of contemporary calm amidst the energy of London’s most exciting new neighbourhood. Step inside and you’ll find interiors dressed in soft, soothing tones that instantly feel like home. Private balconies open out to the buzz of Wembley Park below — the perfect balance of tranquillity and connection. If you dream of peace without missing a moment of the action, Alameda is where you’ll find it.<br /><br />Choose from six carefully considered colour palettes, each offering its own personality and style. Every apartment is complemented by a bespoke furniture collection so your home is as stylish as it is welcoming.<br /><br />Exclusive resident perks include:<br /><br />- Bespoke furniture packages<br />- Premium Samsung integrated appliances<br />- Utilities set up and ready to go<br />- A spectacular roof garden with a 6m outdoor cinema screen for gaming nights or film marathons under the stars.<br />- 24/7 support & security<br />- Two beautifully designed resident lounges<br />- A spacious work-from-home hub<br />- Secure bike storage<br />- Pet-friendly living<br /><br />Living at Alameda means you’re never far from something delicious or exciting. On your doorstep you’ll find a tempting mix of restaurants and hangouts — from the vibrant flavours of Masalchi to a cosy evening at the White Horse Pub. Treat yourself to a classic bite at Five Guys, indulge in decadent desserts at Haute Dolci, or unwind with friends over cocktails and tapas at Estadio Lounge. With so much choice just downstairs, your new favourite spot could be right under your home.<br /><br />*Please note: Alameda offers a range of apartment layouts and outlooks. Photos and floor plans are for illustrative purposes only. Enquire today to arrange a private tour of our available homes.<br /><br />*Available to students",
+    "images": [
+      "/images/houses/2/0.png",
+      "/images/houses/2/1.png",
+      "/images/houses/2/2.png",
+      "/images/houses/2/3.png",
+      "/images/houses/2/4.png",
+      "/images/houses/2/5.png",
+      "/images/houses/2/6.png",
+      "/images/houses/2/7.png",
+      "/images/houses/2/8.png",
+      "/images/houses/2/9.png",
+      "/images/houses/2/10.png",
+      "/images/houses/2/11.png",
+      "/images/houses/2/12.png",
+      "/images/houses/2/13.png",
+      "/images/houses/2/14.png",
+      "/images/houses/2/15.png",
+      "/images/houses/2/16.png",
+      "/images/houses/2/17.png",
+      "/images/houses/2/18.png",
+      "/images/houses/2/19.png",
+      "/images/houses/2/20.png",
+      "/images/houses/2/21.png"
+    ]
+  }
+]
