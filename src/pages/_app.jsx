@@ -1,11 +1,12 @@
 import { Outlet } from "react-router";
+import { Header } from "../_components/header";
 
 const App = () => {
   return (
-    <>
-      <p>hello</p>
+    <div className="bodyPadding">
+      <Header />
       <Outlet />
-    </>
+    </div>
   );
 };
 
