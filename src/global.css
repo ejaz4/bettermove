@@ -3,6 +3,7 @@
 :root {
     --background: rgba(255, 255, 255, 1);
     --foreground: rgba(0, 0, 0, 1);
+    --foreground-transparent: rgba(0, 0, 0, 0.1);
 
     --primary-colour: rgba(215, 0, 75, 1);
 
@@ -77,4 +78,7 @@ a {
 
 .bodyPadding {
     padding: var(--body-padding);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
