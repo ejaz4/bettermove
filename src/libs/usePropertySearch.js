@@ -1,12 +1,12 @@
+import Fuse from "fuse.js";
 import { useProperties } from "./useProperties";
 import FuzzySearch from "fuzzy-search";
 
 export const usePropertySearch = (query) => {
   const properties = useProperties();
 
-  const client = new FuzzySearch(
-    properties,
-    [
+  const client = new Fuse(properties, {
+    keys: [
       "type",
       "boundary",
       "location.town",
@@ -15,11 +15,12 @@ export const usePropertySearch = (query) => {
       "tenure",
       "description",
     ],
-    {
-      caseSensitive: false,
-      sort: true,
-    },
-  );
+    shouldSort: true,
+    findAllMatches: true,
+    useExtendedSearch: true,
+    ignoreLocation: true,
+    threshold: 0.2,
+  });
 
-  return client.search(query);
+  return client.search(query).map((i) => i.item);
 };
