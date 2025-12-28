@@ -6,7 +6,7 @@ const SearchResultsPage = () => {
   const [searchParams] = useSearchParams();
 
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
       <SearchBox />
       <SearchResultsList query={searchParams.get("q")} />
     </div>
