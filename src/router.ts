@@ -6,10 +6,11 @@ import { components, hooks, utils } from '@generouted/react-router/client'
 export type Path =
   | `/`
   | `/bongus`
+  | `/listing/*`
   | `/search`
 
 export type Params = {
-  
+  '/listing/*': { '*': string }
 }
 
 export type ModalPath = never
