@@ -18,13 +18,13 @@
     gap: 0.25rem;
 }
 
-.result .priceLabel {
+.priceLabel {
     display: flex;
     gap: 0.2rem;
     align-items: baseline;
 }
 
-.result .price {
+.price {
     font-weight: bold;
     font-size: 1.5rem;
 }

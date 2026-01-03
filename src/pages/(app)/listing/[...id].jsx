@@ -5,6 +5,8 @@ import NotFound from "../../404";
 import { propertyNameCreator } from "../../../libs/propertyName";
 import { PhotoBento } from "./_components/gallery/bento";
 import styles from "./listing.module.css";
+import { KVBox } from "./_components/kv";
+import { PriceBox } from "./_components/priceBox";
 
 const ListingPage = () => {
   const params = useParams();
@@ -26,15 +28,21 @@ const ListingPage = () => {
     <main className={styles.listing}>
       <PhotoBento images={property.images} />
       <h1 className={styles.name}>{name}</h1>
-      <p>
-        {property.description &&
-          property.description.split("\n").map((t) => (
-            <>
-              {t}
-              <br />
-            </>
-          ))}
-      </p>
+
+      <div className={styles.meta}>
+        <KVBox title={"Description"}>
+          <p>
+            {property.description &&
+              property.description.split("\n").map((t) => (
+                <>
+                  {t}
+                  <br />
+                </>
+              ))}
+          </p>
+        </KVBox>
+        <PriceBox property={property} />
+      </div>
     </main>
   );
 };
