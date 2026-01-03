@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 import { useProperty } from "../../../libs/useProperty";
 import NotFound from "../../404";
 import { propertyNameCreator } from "../../../libs/propertyName";
-import { PhotoGallery } from "./_components/gallery/gallery";
+import { PhotoBento } from "./_components/gallery/bento";
 import styles from "./listing.module.css";
 
 const ListingPage = () => {
@@ -24,7 +24,7 @@ const ListingPage = () => {
 
   return (
     <main className={styles.listing}>
-      <PhotoGallery images={property.images} />
+      <PhotoBento images={property.images} />
       <h1 className={styles.name}>{name}</h1>
       <p>
         {property.description &&
