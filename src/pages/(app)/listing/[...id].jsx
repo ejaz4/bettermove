@@ -7,6 +7,7 @@ import { PhotoBento } from "./_components/gallery/bento";
 import styles from "./listing.module.css";
 import { KVBox } from "./_components/kv";
 import { PriceBox } from "./_components/priceBox";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 const ListingPage = () => {
   const params = useParams();
@@ -29,18 +30,35 @@ const ListingPage = () => {
       <PhotoBento images={property.images} />
       <h1 className={styles.name}>{name}</h1>
 
+      {/* Tab strip */}
       <div className={styles.meta}>
-        <KVBox title={"Description"}>
-          <p>
-            {property.description &&
-              property.description.split("\n").map((t) => (
-                <>
-                  {t}
-                  <br />
-                </>
-              ))}
-          </p>
-        </KVBox>
+        <Tabs className={styles.tabs}>
+          <TabList className={styles.tabStrip}>
+            <Tab>Description</Tab>
+            {property.floorPlan && <Tab>Floorplan</Tab>}
+          </TabList>
+          <TabPanel>
+            <KVBox title={"Description"}>
+              <p>
+                {property.description &&
+                  property.description.split("\n").map((t) => (
+                    <>
+                      {t}
+                      <br />
+                    </>
+                  ))}
+              </p>
+            </KVBox>
+          </TabPanel>
+
+          {property.floorPlan && (
+            <TabPanel>
+              <img src={property.floorPlan} />
+            </TabPanel>
+          )}
+        </Tabs>
+
+        {/* Price box with meta data and information */}
         <PriceBox property={property} />
       </div>
     </main>

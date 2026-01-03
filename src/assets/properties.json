@@ -44,6 +44,7 @@
       "/images/houses/0/14.jpg",
       "/images/houses/0/15.webp"
     ],
+    "floorPlan": "/images/houses/0/floorplan.jpeg",
     "listedOn": "2025-12-10T10:40:10.030Z"
   },
   {
@@ -87,6 +88,7 @@
       "/images/houses/1/17.jpeg",
       "/images/houses/1/18.jpeg"
     ],
+    "floorPlan": "/images/houses/1/floorplan.png",
     "listedOn": "2025-12-13T14:24:10.030Z"
   },
   {
@@ -133,6 +135,7 @@
       "/images/houses/2/20.png",
       "/images/houses/2/21.png"
     ],
+    "floorPlan": null,
     "listedOn": "2025-12-18T14:24:10.030Z"
   }
 ]
