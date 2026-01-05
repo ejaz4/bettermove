@@ -59,7 +59,7 @@ const FilterModalPage = () => {
         </section>
 
         {/* TODO */}
-        {/* <section>
+        <section>
           <span>
             <p>Listed after</p>
             <input type="date" id="listedAfter" name="listedAfter" />
@@ -69,7 +69,7 @@ const FilterModalPage = () => {
             <p>Listed before</p>
             <input type="date" id="listedBefore" name="listedBefore" />
           </span>
-        </section>*/}
+        </section>
 
         <p>Postcode</p>
         <input type="text" name="postcode" placeholder="SW1A 2AA" />

@@ -27,11 +27,11 @@ export const Header = (props) => {
           </a>
         </div>
         <ul>
-          <li>
+          {/* <li>
             <Link to={"/buy"}>Buy</Link>
-          </li>
+          </li>*/}
           <li>
-            <Link to={"/rent"}>Rent</Link>
+            <Link to={"/search"}>Search</Link>
           </li>
           <li>
             <Link to={"/favourites"} state={{ background: location }}>
