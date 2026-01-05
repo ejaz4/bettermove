@@ -1,3 +1,4 @@
+import CurrencyInput from "react-currency-input-field";
 import { Modal } from "../_components/modal";
 import { usePropertyFields } from "../libs/usePropertyFields";
 import styles from "./(app)/search/filter.module.css";
@@ -15,51 +16,55 @@ const FilterModalPage = () => {
       {/* The requirement to use react-widgets is one that is extremely dated, rushed and not aligned with standards */}
       {/* To the examiner, please read: https://gist.github.com/ejaz4/ */}
       {/* TODO */}
-      <form>
+      <form action="/search">
         <p>Type</p>
-        <select name="type" id="type">
-          {fields["type"].map((e) => (
-            <option value={e}>{e.charAt(0) + e.toLowerCase().slice(1)}</option>
+        <select name="type" id="type" multiple>
+          <option value="">Any</option>
+          {fields["type"].map((e, idx) => (
+            <option value={e} key={idx}>
+              {e.charAt(0) + e.toLowerCase().slice(1)}
+            </option>
           ))}
         </select>
         <p>Dwelling</p>
-        <select name="boundary" id="boundary">
-          {fields["boundary"].map((e) => (
-            <option value={e}>{e.charAt(0) + e.toLowerCase().slice(1)}</option>
+        <select name="boundary" id="boundary" multiple>
+          <option value="">Any</option>
+          {fields["boundary"].map((e, idx) => (
+            <option value={e} key={idx}>
+              {e.charAt(0) + e.toLowerCase().slice(1)}
+            </option>
           ))}
         </select>
 
         <section>
           <span>
             <p>Minimum Price</p>
-            <input
-              type="number"
-              name="minPrice"
-              id="minPrice"
-              defaultValue={0}
-            />
+            <CurrencyInput name="minimumPrice" prefix="£" decimalsLimit={2} />
           </span>
 
           <span>
             <p>Maximum Price</p>
-            <input
-              type="number"
-              name="minPrice"
-              id="minPrice"
-              defaultValue={0}
-            />
+            <CurrencyInput name="maximumPrice" prefix="£" decimalsLimit={2} />
           </span>
         </section>
 
-        <section>
+        {/* TODO */}
+        {/* <section>
           <span>
             <p>Listed after</p>
+            <input type="date" id="listedAfter" name="listedAfter" />
           </span>
 
           <span>
             <p>Listed before</p>
+            <input type="date" id="listedBefore" name="listedBefore" />
           </span>
-        </section>
+        </section>*/}
+
+        <p>Postcode</p>
+        <input type="text" name="postcode" placeholder="SW1A 2AA" />
+
+        <input type="submit" />
       </form>
     </Modal>
   );
