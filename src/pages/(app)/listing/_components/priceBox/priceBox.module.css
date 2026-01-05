@@ -1,0 +1,18 @@
+.priceBox {
+    padding: 1rem;
+    border: solid 1px var(--foreground-transparent);
+    border-radius: 1rem;
+    gap: 0.5rem;
+    flex-direction: column;
+    display: flex;
+    height: fit-content;
+    min-width: 400px;
+    flex: 1;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 720px) {
+    .priceBox {
+        width: 100%;
+    }
+}
