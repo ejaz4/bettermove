@@ -8,6 +8,7 @@ export type Path =
   | `/bongus`
   | `/listing/*`
   | `/search`
+  | `/search/filter`
 
 export type Params = {
   '/listing/*': { '*': string }
