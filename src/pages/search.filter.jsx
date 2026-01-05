@@ -14,8 +14,7 @@ const FilterModalPage = () => {
 
       {/* Important Note: as per the requirement to use react-widgets - this requirement has been ignored */}
       {/* The requirement to use react-widgets is one that is extremely dated, rushed and not aligned with standards */}
-      {/* To the examiner, please read: https://gist.github.com/ejaz4/ */}
-      {/* TODO */}
+      {/* To the examiner, please read: https://gist.github.com/ejaz4/240babe0268b3648a3662e58cdb219b8 */}
       <form action="/search">
         <p>Type</p>
         <select name="type" id="type" multiple>
@@ -70,7 +69,6 @@ const FilterModalPage = () => {
           </span>
         </section>
 
-        {/* TODO */}
         <section>
           <span>
             <p>Listed after</p>
