@@ -6,6 +6,7 @@ import { usePropertySearch } from "../libs/usePropertySearch";
 import { Result } from "../_components/search/result";
 import { useEffect } from "react";
 import styles from "./favourites.module.css";
+import { SparklesIcon } from "lucide-react";
 
 const OtherProperties = () => {
   const { id } = useParams();
@@ -30,7 +31,9 @@ const OtherProperties = () => {
     return property[keyToCheck];
   });
 
-  const results = usePropertySearch({ [keyToCheck]: propertyValue });
+  const results = usePropertySearch({ [keyToCheck]: propertyValue }).filter(
+    (e) => e.id != id,
+  );
 
   return (
     <Modal className={styles.favourites}>
@@ -45,9 +48,7 @@ const OtherProperties = () => {
       {keyToCheck == "bedrooms" && (
         <h3>Other places with {propertyValue} or more bedrooms</h3>
       )}
-      {keyToCheck == "boundary" && (
-        <h3>Other {propertyValue[0].toLowerCase()} newhomes</h3>
-      )}
+      {keyToCheck == "boundary" && <h3>Other {propertyValue} newhomes</h3>}
       {keyToCheck == "bathrooms" && (
         <h3>Other places with {propertyValue} or more bathrooms</h3>
       )}
@@ -56,6 +57,24 @@ const OtherProperties = () => {
       )}
       {keyToCheck == "town" && <h3>Other newhomes also in {propertyValue}</h3>}
       <ul className={styles.list}>
+        {results.length == 0 && (
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "2rem",
+              gap: "1rem",
+            }}
+          >
+            <h2>
+              <SparklesIcon /> Nice one!
+            </h2>
+            <p>Your newly Favourited is one of the best on newhome.</p>
+          </div>
+        )}
+
         {results.map((e) => (
           <li>
             <Result id={e.id} />
