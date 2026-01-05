@@ -4,11 +4,32 @@ import { useFavourites } from "../libs/useFavourites";
 import styles from "./favourites.module.css";
 
 const Favourites = () => {
-  const [favourites] = useFavourites();
+  const [favourites, toggleFavourites] = useFavourites();
 
   return (
-    <Modal className={styles.favourites}>
-      <h2>Favourites</h2>
+    <Modal
+      onDrop={(e) => {
+        e.preventDefault();
+        const text = e.dataTransfer.getData("text");
+        console.log(e.dataTransfer.getData("text"));
+        if (text.includes("/listing/")) {
+          const href = new URL(text);
+          toggleFavourites(href.pathname.split("/")[2]);
+        }
+      }}
+      className={styles.favourites}
+    >
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <h2>Favourites</h2>
+        <button
+          onClick={() => {
+            localStorage.setItem("favourites", "[]");
+            window.location.reload();
+          }}
+        >
+          Clear all
+        </button>
+      </div>
       <ul className={styles.list}>
         {favourites.map((e, idx) => (
           <li key={idx}>
