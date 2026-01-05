@@ -106,5 +106,23 @@ export const usePropertySearch = ({
     results = results.filter((e) => e.bedrooms.length > bedrooms);
   }
 
+  if (listedAfter) {
+    if (listedAfter != "") {
+      const listedAfterDate = new Date(listedAfter);
+      results = results.filter(
+        (e) => new Date(e.listedOn).getTime() > listedAfterDate.getTime(),
+      );
+    }
+  }
+
+  if (listedBefore) {
+    if (listedBefore != "") {
+      const listedBeforeDate = new Date(listedBefore);
+      results = results.filter(
+        (e) => new Date(e.listedOn).getTime() < listedBeforeDate.getTime(),
+      );
+    }
+  }
+
   return results;
 };
