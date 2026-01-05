@@ -2,7 +2,14 @@ import styles from "./modal.module.css";
 import { joinClasses } from "../../libs/joinClasses";
 import { useNavigate } from "react-router";
 
-export const Modal = ({ children, onClick, className, ...props }) => {
+export const Modal = ({
+  children,
+  onClick,
+  className,
+  onDragOver,
+  onDrop,
+  ...props
+}) => {
   const navigate = useNavigate();
 
   return (
@@ -11,6 +18,18 @@ export const Modal = ({ children, onClick, className, ...props }) => {
       onClick={(e) => {
         e.currentTarget.classList.remove(styles.in);
         e.currentTarget.classList.add(styles.out);
+      }}
+      onDragOver={(e) => {
+        e.preventDefault();
+        if (onDragOver) {
+          onDragOver(e);
+        }
+      }}
+      onDrop={(e) => {
+        e.preventDefault();
+        if (onDrop) {
+          onDrop(e);
+        }
       }}
       onAnimationEnd={(e) => {
         console.log(e.animationName);

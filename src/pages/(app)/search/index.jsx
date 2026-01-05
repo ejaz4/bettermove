@@ -12,6 +12,7 @@ const SearchResultsPage = () => {
         query={searchParams.get("q")}
         type={searchParams.getAll("type")}
         boundary={searchParams.getAll("boundary")}
+        tenure={searchParams.getAll("tenure")}
         minimumPrice={searchParams.get("minimumPrice")}
         maximumPrice={searchParams.get("maximumPrice")}
         listedAfter={searchParams.get("listedAfter")}
