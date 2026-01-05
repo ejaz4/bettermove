@@ -8,11 +8,14 @@
     align-items: flex-end;
     justify-content: center;
     padding: 4rem;
-    transition: background-color 0.4s ease;
+    transition:
+        background-color 0.4s ease,
+        backdrop-filter 0.4s ease;
 }
 
 .over {
     background-color: var(--foreground-half);
+    backdrop-filter: blur(1rem);
 }
 
 .bar {
@@ -28,7 +31,7 @@
 }
 
 .over .bar {
-    transform: scale(1.2) rotate(3deg);
+    /*transform: scale(1.2) rotate(3deg);*/
 }
 
 @keyframes barUp {
